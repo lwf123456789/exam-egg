@@ -1,0 +1,45 @@
+{
+  "name": "考试系统后端egg",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "crypto": "^1.0.1",
+    "egg": "^3.17.5",
+    "egg-cors": "^3.0.0",
+    "egg-mysql": "^4.0.0",
+    "egg-scripts": "2",
+    "egg-sequelize": "^6.0.0",
+    "mysql2": "^3.9.0",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "egg-bin": "6",
+    "egg-mock": "5",
+    "eslint": "8",
+    "eslint-config-egg": "13"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-考试系统后端egg",
+    "stop": "egg-scripts stop --title=egg-server-考试系统后端egg",
+    "dev": "egg-bin dev",
+    "test": "npm run lint -- --fix && npm run test:local",
+    "test:local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}
